@@ -27,6 +27,7 @@ ul {
 }
 
 .nav-ol li {
+    font-size: var(--subtitle);
     position: relative;
     display: flex;
     flex-direction: row;
