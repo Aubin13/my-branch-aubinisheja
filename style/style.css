@@ -1,0 +1,34 @@
+:root {
+    --title: 56px;
+    --subtitle: 32px;
+}
+
+*,body {
+    font-family: 'Inria Sans', sans-serif;
+}
+
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+    background-image: linear-gradient(#47bdcd, #01607f);
+    background-repeat: no-repeat;
+}
+
+.aubin {
+    font-size: var(--title);
+    display: inline-block;
+}
+
+ul {
+    float: right;
+    display: flex;
+    list-style: none;
+    margin-top: 35px;
+}
+
+.nav-ol li {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
