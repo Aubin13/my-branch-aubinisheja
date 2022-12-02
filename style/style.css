@@ -210,3 +210,117 @@ ul {
     margin: 25px 0px 0px 560px;
     padding-bottom: -10px;
 }
+
+/*      BLOG        */
+
+.bodyy {
+    background-color: var(--darkbluee);
+    margin-right: -50px;
+    margin-left: -50px;
+    display: inline-block;
+}
+
+
+.blog-center-content {
+    background-color: var(--darkbluee);
+    margin-top: -18px;
+    display: flex;
+    flex-direction: row;
+    color: var(--lightbluee); 
+}
+
+.blog-center-content .center-text p:first-child {
+    text-align: center;
+}
+.add-blog-tiny {
+    font-size: 28px;
+    display: inline-block;
+}
+.my-blogs{
+    font-size: var(--title);
+    text-align: center;
+    color: var(--lightbluee);
+    font-weight: bold;
+}
+
+.blog-add {
+    margin-top: -115px;
+    position: absolute;
+    left: 1120px;
+}
+.pen{
+    margin-top:25px;
+    float: right;
+    height: 48px;
+    width: 48px;
+}
+
+/*          blog grids      */
+
+
+
+.blog-grids {
+    display: flex;
+    margin-left: 50px;
+    flex-wrap: wrap;
+    column-gap: 33px;
+    row-gap: 56px;
+}
+
+.blog-grid-content {
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    height: 375px;
+    width: 370px;
+    background-color: var(--darkbluee);
+    border-radius: 37px;
+    box-shadow: 0px 10px 20px #031518b6;
+    transition: ease-in-out all 0.5s;
+}
+
+.blog-grid-content:hover{
+    box-shadow: 0px 20px 30px #020d0f;
+    transition: ease-in-out all 0.5s;
+}
+
+.blog-grid-content img{
+    border-radius: 27px;
+    width: 370px;
+    height: 212px;
+    object-fit: cover;
+}
+
+.blog-grid-content p {
+    font-size: var(--normal-font-size);
+    text-align: justify;
+    align-items: center;
+    background: var(--gradient-background);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 30px;
+    margin-top: -10px;
+}
+
+.blog-grid-content h3{
+    font-size: 36px;
+    line-height: 0;
+    text-align: center;
+    align-items: center;
+    color: var(--lightbluee);
+}
+
+.views-more span img{
+    height: 32px;
+    width: 48px;
+    object-fit: contain;
+    align-items: center;
+}
+
+.views-more {
+    align-items: center;
+    font-size: 28px;
+    margin-top: -25px;
+    background: var(--gradient-background);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
