@@ -1,5 +1,5 @@
 :root {
-    --title: 56px;
+    --title: 46px;
     --button: 36px;
     --subtitle: 24px;
     --heading: 56px;
@@ -30,7 +30,7 @@ body {
 
 /*      HEADER      */
 .aubin {
-    font-size: var(--title);
+    font-size: var(--heading);
     display: inline-block;
     color: var(--lightbluee);
 }
@@ -173,26 +173,27 @@ ul {
 }
 
 .email-add{
-    margin-top: -10px;
+    margin-top: 0px;
     display: flex;
-    width: 360px;
-    height: 48px;
+    width: 300px;
+    height: 28px;
     border: 2px solid var(--darkbluee);
     border-radius: 57px;
     text-align: left;
     padding: 12px 0px 0 20px;
-    column-gap: 140px;
+    column-gap: normal;
 }
 
 .email-enter {
-    display: inline-block;
     margin-top: auto;
-    font-size: var(--normal-font-size);
+    font-size: 14px;
+    margin-top: -3px;
 }
 
 .email-submit {
+    margin-left: 154px;
     width: 104px;
-    height: 60px;
+    height: 42px;
     background: var(--orangee);
     border: 2px solid var(--darkbluee);
     border-radius: 57px;
@@ -200,9 +201,10 @@ ul {
 }
 
 .email-submit p {
-    margin: auto;
+    margin-top: -5px;
     padding-top: 12px;
     text-align: center;
+    font-size: 14px;
 }
 
 .subscribe{
@@ -629,47 +631,312 @@ ul {
     .ul-signup{
         margin-top: -10px;
     }
+
+    .person {
+        width: 300px;
+    }
+
     .aubin{
         font-size: 50px;
+    }
+    .my-footer{
+        margin-left: -150px;
+    }
+    .center-button{
+        margin-left: 50px;
+    }
+    .center-content p:first-child {
+        margin-top: 30px;
     }
 }
 
 
-@media screen and (max-width: 1030px) {
-    .person{
-        margin-top: 70px;
-        width: 350px;
-        height: 400px;
+@media screen and (max-width: 1009px) {
+    .aubin{
+        font-size: 4vw;
     }
 }
 
 @media screen and (max-width: 983px) {
+    body {
+        margin-left: 20px;
+    }
     .aubin{
-        text-align: center;
         display: flex;
-        justify-content: center;
+        color: rgb(0, 183, 255);
+        font-size: var(--heading);
     }
     ul {
         display: grid;
         position: absolute;
         right: 0;
-        margin-right: 30px;
+        margin-right: 20px;
         margin-top: -100px;
+        text-align: center;
+        position: fixed;
+        text-align: center;
+        row-gap: 20%;
+        padding-bottom: 30px;
+    }
+
+    .ul-normal {
+        position: absolute;
+        right: -10px;
+    }
+
+    .mobile-rectangle{
+        top: 0;
+        right: 0;
+        position: absolute;
+        height: 730px;
+        width: 170px;
+        background-color: #002d33;
+        border-radius: 0px 0px 0px 20px;
+        position: fixed;
     }
 
     .nav-ol li{
-        margin-top: 40px;
+        margin-top: 0px;
+        margin-bottom: 40px;
+        text-align: center;
     }
 
     .center-content{
-        margin-top: -30px;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+
+    .center-text {
+        margin-left: 50px;
+        margin-right: 120px;
+        line-height: 60px;
+
     }
     .person{
-        width: 200px;
-        height: 400px;
+        display: none;
+    }
+    .my-footer{
+        margin-left: -200px;
+    }
+
+    .center-content p{
+        font-size: var(--normal-font-size);
+    }
+
+    .center-content p:first-child{
+        font-size: var(--title);
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .center-button{
+        margin-left: 200px;
+        height: 80px;
     }
 }
 
-@media screen and (max-width: 813px) {
+@media screen and (max-width: 760px) {
+    .my-footer {
+        margin-left: -50vw;
+    }
 
+    .center-button {
+        margin-left:20vw;
+    }
+
+    .nav-ol li{
+        font-size: 18px;
+    }
+
+    .mobile-rectangle {
+        height: 660px;
+        width: 120px;
+    }
+
+    ul {
+        margin-right: 10px;
+    }
+
+    .center-text {
+        margin-right: 50px;
+    }
+
+    .center-content p:first-child {
+        text-align: left;
+    }
+
+    body {
+        margin-left: 0px;
+    }
+}
+
+
+@media screen and (max-width: 702px) {
+    .my-footer {
+        margin-left: -40vw;
+    }
+}
+
+@media screen and (max-width: 582px) {
+    .my-footer {
+        margin-left: -60vw;
+    }
+
+    .center-button {
+        margin-left: 10vw;
+    }
+}
+
+@media screen and (max-width: 526px) {
+    .my-footer {
+        margin-left: -70vw;
+    }
+}
+
+@media screen and (max-width: 492px) {
+    .my-footer {
+        margin-left: -80vw;
+    }
+
+    .center-button{
+        margin-left: 25px;
+    }
+}
+
+
+@media screen and (max-width: 453px) {
+    .my-footer {
+        margin-left: -97vw;
+    }
+
+    .center-button{
+        margin-left: 10px;
+    }
+
+    body {
+        margin-left: 15px;
+    }
+
+    .aubin {
+        margin-left: -39px;
+        text-align: left;
+    }
+
+    .center-text {
+        margin-left: 10px;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .my-footer {
+        margin-left: -108vw;
+    }
+
+    .center-button{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 406px) {
+    .my-footer {
+        margin-left: -111vw;
+    }
+
+    .center-button{
+        margin-left: 10px;
+        font-size: 20px;
+        width: 200px;
+        height: 70px;
+    }
+
+    .center-text {
+        font-size: 16px;
+    }
+
+    .center-content p:first-child{
+        font-size: 30px;
+    }
+    .center-text {
+        font-size: 14px;
+        line-height: 350%;
+    }
+
+}
+
+@media screen and (max-width: 387px) {
+    .my-footer {
+        margin-left: -120vw;
+    }
+
+    .email-add {
+        width: 200px;
+        margin-left: 50px;
+    }
+
+    .email-submit {
+        width: 100px;
+        margin-left: 80px;
+    }
+
+    .center-content p:first-child{
+        font-size: 30px;
+    }
+    .center-text {
+        font-size: 14px;
+        line-height: 350%;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .my-footer {
+        margin-left: -350%;
+    }
+
+    .center-content p:first-child{
+        font-size: 30px;
+    }
+    .center-text {
+        font-size: 14px;
+        line-height: 350%;
+    }
+
+    .nav-ol li{
+        font-size: 14px;
+    }
+
+    .mobile-rectangle {
+        width: 100px;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 339px) {
+    .my-footer {
+        margin-left: -350%;
+    }
+
+    .center-text {
+        font-size: 10px;
+        margin-right: 10px;
+    }
+    body {
+        margin-left: 0;
+    }
+    .center-button {
+        width: 150px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .my-footer {
+        margin-left: -370%;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .my-footer {
+        margin-left: -410%;
+    }
 }
