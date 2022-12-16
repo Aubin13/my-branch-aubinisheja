@@ -364,7 +364,7 @@ ul {
 }
 
 .contact-form {
-    margin-left: 200px;
+    margin-left: 20vw;
     border: solid 3px var(--darkbluee);
     border-radius: 30px;
     margin-top: 150px;
@@ -408,18 +408,22 @@ ul {
 
 
 .blog-add-form {
-    width: 800px;
+    width: auto;
     color: var(--lightbluee);
     background-color: #47bdcd65;
-    margin-left: 20px;
-    padding-left: 100px;
+    margin-left: 10vw;
+    padding-left: 50px;
     margin-right: 200px;
-    padding-right: 100px;
+    padding-right: 50px;
     margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 20px;
     margin-bottom: 50px;
     border-radius: 20px;
+}
+
+.blog-add-form form textarea{
+    width: 45vw;
 }
 
 .blog-add-form h2{
@@ -454,14 +458,25 @@ ul {
     margin-top: 20px;
 }
 
+.login-container{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
 
+.sivigees{
+    width: 30vw;
+    height: 450px;
+    display: inline-block;
+    margin-left: 0px;
+}
 .login {
-    width: 500px;
+    width: auto;
     color: var(--lightbluee);
     background-color: #0f2a2e65;
-    margin-left: 200px;
     padding-left: 50px;
-    margin-right: 200px;
+    margin-right: -40px;
     padding-right: 50px;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -519,9 +534,9 @@ ul {
     width: 500px;
     color: var(--lightbluee);
     background-color: #0f2a2e65;
-    margin-left: 200px;
+    margin-left: 0px;
     padding-left: 50px;
-    margin-right: 200px;
+    margin-right: 0px;
     padding-right: 50px;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -575,6 +590,9 @@ ul {
     text-align: left;
 }
 
+.comment-individual{
+    margin-top: 30px;
+}
 .comment-individual img{
     width: 50px;
     height: 52px;
@@ -590,6 +608,10 @@ ul {
 
 .comment-individual p{
     margin-top: -5px;
+    position: absolute; 
+    margin-left: 61px;
+    padding-right: 20px;
+    width: 50vw;
 }
 
 .comments{
@@ -602,7 +624,8 @@ ul {
     margin-bottom: 50px;
     margin-left: 30px;
     margin-right: 30px;
-    height: auto;
+    height: fit-content;
+    padding-bottom: 50px;
 }
 
 .mobile-nav {
@@ -694,6 +717,18 @@ ul {
         border-radius: 0px 0px 0px 20px;
         position: fixed;
     }
+
+    .mobile-rectangle2 {
+        top: 0;
+        right: 0;
+        position: absolute;
+        height: 730px;
+        width: 120px;
+        background-color: #002d33;
+        border-radius: 0px 0px 0px 20px;
+        position: fixed;
+    }
+
 
     .nav-ol li{
         margin-top: 0px;
@@ -938,5 +973,160 @@ ul {
 @media screen and (max-width: 325px) {
     .my-footer {
         margin-left: -410%;
+    }
+}
+
+/*          blog page   */
+
+@media screen and (max-width: 1024px) {
+    .blog-add{
+        left: 680px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .blog-add{
+        left: 630px;
+    }
+    .add-blog-tiny{
+        font-size: 18px;
+        margin-top: 35px;
+    }
+}
+
+/*      contact page    */
+
+@media screen and (max-width: 1024px) {
+    .contact-form {
+        margin-left: 10vw;
+    }
+    .image-contact {
+        width: 24vw;
+        height: 24vw;
+    }
+    .contact-div p {
+        width: 45vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .image-contact {
+        display: none;
+    }
+
+    .contact-div p {
+        width: 70vw;
+    }
+    .contact-div {
+        margin-top: -80px;
+    }
+
+    .contact-form {
+        margin-left: 0vw;
+        width: 60vw;
+    }
+
+    .contact-form h2 {
+        font-size: 20px;
+    }
+
+    .contact-form label{
+        font-size: 16px;
+    }
+
+    .contact-form input , .contact-form textarea {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .contact-div {
+        margin-left: -40px;
+    }
+    .contact-div p{
+        width: 63vw;
+    }
+    .contact-form {
+        margin-left: -40px;
+        margin-top: 0px;
+    }
+    .contact-form form {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .contact-div {
+        margin-left: -50px;
+    }
+    .contact-div p{
+        width: 63vw;
+    }
+    .contact-form {
+        margin-left: -50px;
+        margin-top: 0px;
+    }
+    .contact-form form {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .contact-div {
+        margin-left: -40px;
+    }
+    .contact-div p{
+        width: 63vw;
+    }
+    .contact-form {
+        margin-left: -40px;
+        margin-top: 0px;
+    }
+    .contact-form form {
+        margin-left: 20px;
+    }
+}
+
+/*      login   */
+
+@media screen and (min-width: 768px){
+    .sivigees {
+        width: 20vw;
+    }
+}
+
+/*      view blog       */
+
+@media screen and (max-width: 425px){
+    .view-blog , .comments{
+        margin-left: -40px;
+        margin-right: -20px;
+        padding: 5px 5px 5px  5px;
+    }
+
+    .comments {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .comment-individual{
+        margin-bottom: 30px;
+    }
+    .comment-individual p{
+        margin-top: 0px;
+        width: 40vw;
+    }
+}
+
+/*      add blog    */
+
+@media screen and (max-width: 1024px){
+    .blog-add-form form textarea{
+        width: 32vw;
+    }
+
+    .blog-add-form button{
+        margin-left: 100px;
     }
 }
