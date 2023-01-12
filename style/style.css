@@ -252,7 +252,7 @@ ul {
 .blog-add {
     margin-top: -115px;
     position: absolute;
-    left: 1000px;
+    left: 1200px;
 }
 .pen{
     margin-top:25px;
@@ -424,6 +424,11 @@ ul {
 
 .blog-add-form form textarea{
     width: 45vw;
+}
+
+.blog-input:focus {
+    outline: none;
+    padding: 5px 5px 5px 5px;
 }
 
 .blog-add-form h2{
@@ -980,13 +985,13 @@ ul {
 
 @media screen and (max-width: 1024px) {
     .blog-add{
-        left: 680px;
+        left: 1080px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .blog-add{
-        left: 630px;
+        left: 1080px;
     }
     .add-blog-tiny{
         font-size: 18px;
