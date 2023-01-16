@@ -414,10 +414,7 @@ ul {
     padding-left: 50px;
     margin-right: 200px;
     padding-right: 50px;
-    margin-top: 10px;
     padding-top: 10px;
-    padding-bottom: 20px;
-    margin-bottom: 50px;
     border-radius: 20px;
 }
 
@@ -432,7 +429,7 @@ ul {
 
 .blog-add-form h2{
     text-align: center;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .blog-add-form form{
@@ -444,6 +441,7 @@ ul {
     border-width: 0;
     width: 300px;
     height: 30px;
+    margin-bottom: 20px;
 }
 
 .blog-add-form textarea{
@@ -460,6 +458,7 @@ ul {
     color: var(--lightbluee);
     margin-left: 320px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .login-container{
@@ -555,7 +554,7 @@ ul {
 }
 
 .signup form{
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .signup input{
