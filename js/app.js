@@ -149,5 +149,4 @@ function check(){
 
 function messagee(){
     console.log("nights")
-    document.getElementById("dispName").textContent = userName.value;
 }
