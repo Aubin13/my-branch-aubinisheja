@@ -28,7 +28,7 @@ document.getElementById('blog-submit').addEventListener('click', function() {
 
 //3
 
-datc = document.getElementById('blog-content');
+datc = document.getElementById('blog-name');
 
 document.getElementById('blog-submit').addEventListener('click', function() {
     window.localStorage.setItem('name', datc.value);
@@ -53,13 +53,14 @@ document.getElementById('blog-view').textContent = localStorage.getItem('blog');
 //2
 
 window.addEventListener('load', function(){
-    document.getElementById('blog-titled').textContent = localStorage.getItem('name');
+    document.getElementById('blog-titled').textContent = localStorage.getItem('title');
     })
 
 //3
 
 window.addEventListener('load', function(){
-    document.getElementById('blog-named').textContent = localStorage.getItem('title');
+    document.getElementById('blog-named').textContent = localStorage.getItem('name');
+    console.log("days")
     })
 
 document.getElementById('blog-view').addEventListener('load', function() {
@@ -70,8 +71,8 @@ document.getElementById('blog-titled').addEventListener('load', function() {
     document.getElementById('blog-titled').innerHTML = localStorage.getItem('blog');
 })
 
-document.getElementById('blog-view').addEventListener('load', function() {
-    document.getElementById('blog-view').innerHTML = localStorage.getItem('blog');
+document.getElementById('blog-named').addEventListener('load', function() {
+    document.getElementById('blog-named').innerHTML = localStorage.getItem('blog');
 })
 
 
@@ -86,28 +87,67 @@ function updateUI() {
 }
 
 
-//login
-
-var user = document.getElementById("user");
-var pass = document.getElementById("pass");
-var email = document.getElementById("email");
-var user2 = document.getElementById("user2");
-var pass2 = document.getElementById("pass2");
-
-function register() {
-    localStorage.setItem("username", user.value);
-    localStorage.setItem("password", pass.value);
-    localStorage.setItem("email", email.value);
-    document.getElementById("id01").innerHTML = "Registration successful";
+//signup
+window.onload = function (){
+    console.log("days")
 }
 
-function login() {
-    var checkuser = localStorage.getItem("username");
-    var checkpass = localStorage.getItem("password");
-    if (checkuser === user2.value && checkpass === pass2.value) {
-        document.getElementById("demo").innerHTML = "You are now logged in.";
-    } else {
-        document.getElementById("demo").innerHTML = "Incorrect username and password";
+document.addEventListener("DOMContentLoaded", check())
+//signup
+function store(){
+
+    var name = document.getElementById('name');
+    var pw = document.getElementById('pw');
+    console.log('get here')
+    var lowerCaseLetters = /[a-z]/g;
+    var upperCaseLetters = /[A-Z]/g;
+    var numbers = /[0-9]/g;
+
+    if(name.value.length == 0){
+        alert('Please fill in email');
+
+    }else if(pw.value.length == 0){
+        alert('Please fill in password');
+
+    }else if(name.value.length == 0 && pw.value.length == 0){
+        alert('Please fill in email and password');
+
+    }
+else if(!pw.value.match(numbers)){
+        alert('please add 1 number');
+
+    }else if(!pw.value.match(upperCaseLetters)){
+        alert('please add 1 uppercase letter');
+
+    }else if(!pw.value.match(lowerCaseLetters)){
+        alert('please add 1 lovercase letter');
+
+    }else{
+        localStorage.setItem('name', name.value);
+        localStorage.setItem('pw', pw.value);
+        alert('Your account has been created');
+    }
+}
+//checking
+function check(){
+    console.log('here')
+
+    var storedName = localStorage.getItem('name');
+    var storedPw = localStorage.getItem('pw');
+
+    var userName = document.getElementById('userName');
+    var userPw = document.getElementById('userPw');
+    var userRemember = document.getElementById("rememberMe");
+    var dispName = document.getElementById('dispName');
+    if(userName.value == storedName && userPw.value == storedPw){
+        alert('You are logged in.');
+        messagee()
+    }else{
+        alert('Error on login');
     }
 }
 
+function messagee(){
+    console.log("nights")
+    document.getElementById("dispName").textContent = userName.value;
+}

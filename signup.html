@@ -10,7 +10,7 @@
 
     <body>
         <div class="div-navigation">
-            <h1 class="aubin">Aubin</h1>
+            <a href="index.html"><h1 class="aubin">Aubin</h1></a>
             <span class="mobile-rectangle2"></span>
             <ul class="nav-ol">
                 <a href="index.html" style="text-decoration: none; color: inherit;">
@@ -36,14 +36,16 @@
                     <label for="" >Full Name</label><br>
                     <input type="text"><br><br>
                     <label for="">Username</label><br>
-                    <input type="name" id="user"><br><br>
+                    <input type="name" ><br><br>
                     <label for="">Email</label><br>
-                    <input type="email" id="email"><br><br>
+                    <input type="email" id="name"><br><br>
                     <label for="">Create Password</label><br>
-                    <input type="password" id="pass"><br>
-                    <a href="home.html"><button type="submit">Sign up</button><br></a>
+                    <input type="password" id="pw"><br>
+                    <button type="submit" id="rgstr_btn" onclick="store()">Sign up</button><br>
+
                     <label for="" class="no-account">Already have an account? <a href="login.html" style="text-decoration: none;">Log in</a></label>
                 </form>
+                <script src="js/app.js"></script>
             </div>
             <img src="images/african-man.png" alt="" class="sivigees">
         </div>
