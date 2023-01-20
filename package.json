@@ -1,0 +1,23 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node.js",
+  "scripts": {
+    "start": "node node.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aubin13/my-branch-aubinisheja.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aubin13/my-branch-aubinisheja/issues"
+  },
+  "homepage": "https://github.com/Aubin13/my-branch-aubinisheja#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
